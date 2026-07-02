@@ -14,12 +14,19 @@ const Projects = () => {
       githubLink: "https://github.com/AashayChhajed/multimodal-transport-optimizer",
     },
     {
+      title: "Habit Dungeon- A Gamified Habit Tracker",
+      description:
+        "Habit Dungeon is a full-stack, gamified habit tracker web application which turns your daily routines into epic RPG quests. Built using Next.js, TypeScript, Tailwind CSS, Prisma ORM, and Framer Motion. ",
+      tags: ["Next.js", "TypeScript", "Tailwind CSS", "Prisma"],
+      githubLink: "https://github.com/AashayChhajed/Habit-Dungeon",
+    },
+    {
       title: "Restaurant Food Ordering System",
       description:
         "A full-stack food ordering system built using PHP & MySQL with: Customer menu + cart + multi-item checkout Order storage with relational tables Live updating kitchen dashboard Order status controls Admin panel for managing orders",
       tags: ["HTML", "CSS", "PHP", "MySQL"],
       githubLink: "https://github.com/AashayChhajed/Restaurant-Food-Ordering-System",
-    },
+    }
   ];
 
   return (

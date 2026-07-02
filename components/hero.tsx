@@ -45,7 +45,7 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="https://drive.google.com/file/d/1lQ1ojQin9yev8EDsGExJzkZ5DHBd5zLr/view?usp=sharing"
+            href="https://drive.google.com/file/d/1YmTHxG2qX5fUfW7gRHrxRZ5MdKwYwKov/view?usp=sharing"
             className="px-6 py-3 border border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors"
           >
             View Resume
