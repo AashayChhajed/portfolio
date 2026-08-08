@@ -45,7 +45,7 @@ const Hero = () => {
             View Work
           </a>
           <a
-            href="/assets/Resume-Aashay_Chhajed.pdf"
+            href="/assets/resume.pdf"
             className="px-6 py-3 border border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors"
           >
             View Resume
