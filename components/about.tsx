@@ -29,7 +29,7 @@ const About = () => {
           <div className="relative h-80 w-80 rounded-lg overflow-hidden border border-neutral-800">
             <div className="absolute inset-0 bg-gradient-to-br from-neutral-700/20 to-neutral-900/30" />
             <img
-              src="/profile.jpeg"
+              src="/assets/profile.jpeg"
               alt="Portrait"
               className="h-115 w-full object-cover"
             />

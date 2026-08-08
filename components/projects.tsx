@@ -7,6 +7,13 @@ import { Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
+      title: "Ecommerce-Ops-Autopilot",
+      description:
+        " Developed a commerce operations automation platform that helps online merchants manage inventory, product content, and order alerts, and provides real-time operational KPIs through a scheduled and fault-tolerant backend.",
+      tags: ["Next.js", "Node.js","TypeScript","Tailwind CSS", "PostgreSQL"],
+      githubLink: "https://github.com/AashayChhajed/Ecommerce-Ops-Autopilot",
+    },
+    {
       title: "Multimodal Transport Optimizer",
       description:
         "A full-stack logistics optimization platform that computes the most cost-effective, time-efficient, and eco-friendly delivery routes using multiple transportation modes ",
@@ -23,7 +30,7 @@ const Projects = () => {
     {
       title: "Restaurant Food Ordering System",
       description:
-        "A full-stack food ordering system built using PHP & MySQL with: Customer menu + cart + multi-item checkout Order storage with relational tables Live updating kitchen dashboard Order status controls Admin panel for managing orders",
+        "A restaurant ordering system using HTML, CSS, JavaScript, PHP, and MySQL, featuring menu browsing, cart management, multi-item checkout, live kitchen order tracking, and an admin panel for managing order statuses.",
       tags: ["HTML", "CSS", "PHP", "MySQL"],
       githubLink: "https://github.com/AashayChhajed/Restaurant-Food-Ordering-System",
     }
