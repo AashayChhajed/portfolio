@@ -1,15 +1,15 @@
-import Hero from "@/components/hero";
-import About from "@/components/about";
-import Skills from "@/components/skills";
-import Projects from "@/components/projects";
 import Contact from "@/components/contact";
+import Hero from "@/components/hero";
+import Navigation from "@/components/navigation";
+import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
-      <div className="max-w-7xl w-full">
-        <Hero />
-        <About />
+    <main className="min-h-screen overflow-hidden">
+      <Navigation />
+      <Hero />
+      <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Skills />
         <Projects />
         <Contact />

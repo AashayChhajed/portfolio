@@ -1,84 +1,8 @@
 "use client";
-import React from "react";
-import { SparklesCore } from "./ui/sparkles";
+
+import { ArrowDownRight, ArrowUpRight } from "lucide-react";
 import { motion } from "framer-motion";
 
-const Hero = () => {
-  return (
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
-      <div className="w-full absolute inset-0 h-screen">
-        <SparklesCore
-          id="tsparticlesfullpage"
-          background="transparent"
-          minSize={0.6}
-          maxSize={1.4}
-          particleDensity={100}
-          className="w-full h-full"
-          particleColor="#FFFFFF"
-        />
-      </div>
-      
-      <div className="relative z-10 text-center px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <h1 className="text-5xl md:text-7xl lg:text-9xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-            Aashay Chhajed
-          </h1>
-          <p className="text-base md:text-xl lg:text-2xl text-neutral-300 max-w-2xl mx-auto mt-4">
-            Full Stack Developer | Tech Enthusiast
-          </p>
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-          className="mt-8 flex gap-4 justify-center"
-        >
-          <a
-            href="#projects"
-            className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-neutral-200 transition-colors"
-          >
-            View Work
-          </a>
-          <a
-            href="/assets/resume.pdf"
-            className="px-6 py-3 border border-white text-white rounded-lg font-medium hover:bg-white hover:text-black transition-colors"
-          >
-            View Resume
-          </a>
-          <a
-            href="#contact"
-            className="px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-neutral-200 transition-colors"
-          >
-            Contact Me
-          </a>
-        </motion.div>
-      </div>
-
-      <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
-        <motion.div
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
-          <svg
-            className="w-6 h-6 text-white"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-          </svg>
-        </motion.div>
-      </div>
-    </div>
-  );
-};
-
-export default Hero;
+export default function Hero() {
+  return <section id="about" className="paper-grid scroll-mt-20 border-b border-[var(--line)]"><div className="mx-auto grid min-h-[calc(100svh-72px)] max-w-6xl content-center gap-10 px-5 py-14 sm:px-8 sm:py-[72px] lg:grid-cols-[1fr_350px] lg:gap-16"><motion.div initial={{ opacity: 0, y: 18 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .55 }}><p className="eyebrow mb-7">Full-stack developer / India</p><h1 className="max-w-3xl text-5xl font-semibold leading-[.98] tracking-[-.065em] sm:text-7xl">Aashay<br />Chhajed.</h1><p className="mt-5 max-w-xl text-base leading-relaxed text-[var(--muted)] sm:text-lg">I build across the full product stack—from responsive Next.js interfaces to durable APIs, databases, and automation. I care about the details that make software feel calm, useful, and ready for real people.</p><div className="mt-9 flex flex-wrap gap-3"><a href="#projects" className="inline-flex items-center gap-2 rounded-full bg-[var(--ink)] px-5 py-3 font-semibold text-[var(--paper)] transition hover:bg-[var(--accent)]">Explore selected work <ArrowDownRight size={17} /></a><a href="/assets/resume.pdf" target="_blank" className="inline-flex items-center gap-2 rounded-full border border-[var(--ink)] px-5 py-3 font-semibold transition hover:bg-[var(--ink)] hover:text-[var(--paper)]">View résumé <ArrowUpRight size={17} /></a></div></motion.div><motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ delay: .15, duration: .55 }} className="relative mx-auto w-full max-w-[350px]"><div className="absolute -bottom-4 -left-4 h-[calc(100%-96px)] w-full border border-[var(--accent)]" /><img src="/assets/profile.jpeg" alt="Aashay Chhajed" className="relative h-[min(48svh,420px)] w-full object-cover grayscale transition duration-500 hover:grayscale-0" /><div className="relative mt-5 border-l border-[var(--line)] pl-4 text-sm leading-relaxed text-[var(--muted)]"><p className="eyebrow mb-2">Currently</p><p className="font-medium text-[var(--ink)]">Open to opportunities</p><p>Software Engineering<br />Remote friendly</p></div></motion.div></div></section>;
+}
